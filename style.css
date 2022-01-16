@@ -1,0 +1,269 @@
+/*-----------Common Css-------*/
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    background-color:#aaaaaa20;
+}
+
+  /*banner---*/
+
+.banner-sec {
+    display: flex;
+    justify-content: center;
+    padding: 30px 70px;
+}
+.banner-text {
+   width: 40%;
+   margin-top: 70px;
+}
+.banner-text h1 {
+    font-size: 40px;
+    font-weight: 900;
+    color: #3a3a3a;
+}
+.banner-text p{
+    margin-top: 30px;
+    font-size: 14px;
+    color:#3a3a3a ;
+}
+
+.banner-img {
+    display: flex;
+    width: 50%;
+    justify-content: center;
+}
+
+.button{
+   display: block;
+   margin-top: 20px;
+}
+.banner-sec a{
+   text-decoration: none;
+   color: #fbe4ec;
+   background-color: #e02c6d;
+   padding: 10px 23px;
+   border-radius: 41px;
+   font-size: 12px;
+}
+.banner-img {
+    width: 50%;
+}
+.banner-img:hover img{
+    transform: rotate(360deg);
+    transition: 1.5s;
+}
+.banner-img img{
+    width: 351px;
+    height: 351px;
+    background-image: url(./images/Circle\ design.svg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+  /*------populer collecton----*/
+.populer-collection{
+   width: auto;
+}
+.populer-title{
+    text-align: center;
+    padding-top: 20px;
+    color: #3a3a3a;
+    font-family: 'Poppins', sans-serif;
+}
+.products{
+    border-radius: 10px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    margin: 30px;
+    justify-items: center;
+}
+.product{
+    background-color:#ffffff ;
+    border-radius: 5px;
+    margin: 15px;
+    padding: 10px;
+    max-width: 320px;
+}
+
+
+.product-info p{
+    font-size: small;
+}
+.product-info img {
+    max-width: 100%;
+}
+
+.rating i{
+   font-size: 10px;
+}
+.rating span{
+    font-size: 12px;
+   
+}
+.filled{
+    color:#fb8200 ;
+}
+.empty{
+    color: gray;
+}
+.seemore-btn{
+    text-decoration: none;
+    color:#e44880 ;
+    float: right;
+    margin-right: 40px;
+}
+   /*---payment-css---*/
+.payment{
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+    margin-left: 50px;
+    margin-top: 60px;
+}
+.pay-now{
+    width: 50%;
+}
+.pay-now img{
+    padding: 40px;
+}
+.payment-info{
+    width: 50%;
+}
+.payment-info h1{
+    color: #3a3a3a;
+    padding-bottom: 30px;
+    font-size: 35px;
+}
+.payment-info p{
+    color: #3a3a3a;
+}
+.payment-info span{
+    display: inline-block;
+    margin-top: 30px;
+}
+.payment-info a{
+    padding: 5px 10px;
+    font-size: 10px;
+}
+.pay-button a {
+   text-decoration: none;
+   color: #fbe4ec;
+   background-color: #e02c6d;
+   padding: 10px 23px;
+   font-size: 12px;
+}
+/*  Footer   */
+footer{
+    background: #0a0826;
+    height: 200px;
+}
+.footer-info{
+   padding-top: 40px;
+   width: 50%;
+   margin: 0 auto;
+   
+}
+.footer-info h3{
+    color: #ffffff;
+    text-align: center;
+}
+.footer-info p{
+    color: #c3c4cd;
+    text-align: center;
+}
+.footer-info h4{
+    color:#c3c4cd ;
+    text-align: center;
+}
+footer a {
+    color: rgb(0, 177, 44);
+}
+
+.social-menu {
+    margin: 0 auto;
+    padding-top: 20px;
+}
+.social{
+    width: 250px;
+    margin: 0 auto;
+}
+.social-menu a{
+    padding-left: 15px;
+    color: #fff;
+}
+.social-icon{
+    background-color: #22203b;
+    padding: 10px;
+    border-radius: 50px;
+    
+}
+
+
+
+
+
+
+
+/* ------------------------
+    Responsive Styles --Tablet--
+----------------------- */
+@media only screen and (max-width: 992px) {
+    .banner-sec {
+        padding: 30px;
+    }
+    .banner-text h1{
+        font-size: 30px;
+    }
+    .products {
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+    }
+    .payment {
+        padding: 0;
+        margin: 80px 20px 20px;
+    }
+    .pay-now img {
+        width: 80%;
+    }
+    .payment-info h1 {
+        font-size: 30px;
+    }
+}
+
+
+/* ------------------------
+    Responsive Styles  --Mobile--
+----------------------- */
+@media only screen and (max-width: 688px) {
+    .banner-sec {
+        display: block;
+    }
+    .banner-text {
+        margin-bottom: 80px;
+        width: 100%;
+    }
+    .banner-img {
+        width: 100%;
+    }
+    .products {
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+    .payment {
+        display: block;
+    }
+    .pay-now {
+        width: 100%;
+    }
+    .payment-info {
+        width: 100%;
+    }
+    footer {
+        padding-bottom: 40px;
+    }
+}
